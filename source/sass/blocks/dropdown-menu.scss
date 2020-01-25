@@ -1,0 +1,26 @@
+.dropdown-menu {
+  color: #000000;
+}
+
+.dropdown-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 11px 44px;
+  list-style: none;
+  background-color: rgba(232, 232, 232, 0.5);
+}
+
+.dropdown-menu__item:not(:first-child) {
+  margin-left: 22px;
+}
+
+.dropdown-menu__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
