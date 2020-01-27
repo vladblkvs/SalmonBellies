@@ -3,22 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+  <meta name="msapplication-TileImage" content="ms-icon-150x150.png">
   <title>SalmonBellies</title>
 </head>
 <body data-nojs>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header">
-    <div class="container">
-      <a class="header__logo">Salmonbellies AS</a>
-      <button class="page-header__btn" type="button">
-        <span class="page-header__open-menu">
-          <span class="visually-hidden">Open menu</span>
-        </span>
-        <span class="page-header__close-menu">
-          <span class="visually-hidden">Close menu</span>
-        </span>
-      </button>
-      <nav class="header__nav">
+    <a class="header__logo">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="32" alt="SalmonBellies">
+      </picture>
+    </a>
+    <button class="page-header__btn" type="button">
+      <span class="page-header__open-menu">
+        <svg width="22" height="22">
+          <title>Open menu</title>
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+      </span>
+      <span class="page-header__close-menu">
+        <svg width="22" height="22">
+          <title>Close menu</title>
+          <use xlink:href="#icon-close"></use>
+        </svg>
+      </span>
+    </button>
+    <nav class="header__nav">
+      <div class="header__nav-inner">
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="#">Our products</a>
@@ -49,29 +74,45 @@
           </li>
         </ul>
         <div class="header__dropdown-menu dropdown-menu">
-          <span class="dropdown-menu__current-item">
-            <span class="visually-hidden">English</span>
-          </span>
+          <div class="dropdown-menu__activator" tabindex="0">
+            <p class="visually-hidden">Choose locale:</p>
+            <span class="dropdown-menu__arrow" aria-hidden="true">
+              <svg width="12" height="7">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+            </span>
+            <span class="dropdown-menu__current-item" aria-hidden="true">
+              <svg width="32" height="32">
+                <use xlink:href="#icon-lang-eng"></use>
+              </svg>
+            </span>
+          </div>
           <ul class="dropdown-menu__list">
             <li class="dropdown-menu__item dropdown-menu__item--active">
-              <a class="dropdown-menu__link">
-                <span class="visually-hidden">English</span>
+              <a class="dropdown-menu__link" href="#">
+                <svg width="32" height="32">
+                  <title>English</title>
+                  <use xlink:href="#icon-lang-eng"></use>
+                </svg>
               </a>
             </li>
             <li class="dropdown-menu__item">
-              <a class="dropdown-menu__link">
+              <a class="dropdown-menu__link" href="#">
                 <span class="visually-hidden">中文</span>
+                <svg width="32" height="32">
+                  <title>中文</title>
+                  <use xlink:href="#icon-lang-chi"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
   <div class="container"></div>
   <div class="container"></div>
   <footer class="footer">
-    <div class="container"></div>
   </footer>
   <script src="js/script.min.js"></script>
 </body>

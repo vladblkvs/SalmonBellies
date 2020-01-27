@@ -2,10 +2,15 @@
 
 document.querySelector('body').removeAttribute('data-nojs');
 
-var navBar = document.querySelector('.header__nav');
+var headerBar = document.querySelector('.header');
 var menuBtn = document.querySelector('.page-header__btn');
 var onMenuButtonClick = function () {
-  navBar.classList.toggle('header__nav--expended');
+  headerBar.classList.toggle('header--extended');
 };
 
 menuBtn.addEventListener('click', onMenuButtonClick);
+
+var LAPTOP_WIDTH = 1024;
+if (headerBar.clientWidth === LAPTOP_WIDTH) {
+  headerBar.classList.remove('header--extended');
+}
