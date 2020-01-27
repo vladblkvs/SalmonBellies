@@ -24,6 +24,7 @@
   border: 0;
   background: none;
   fill: $color-theme;
+  outline: none;
 
   body[data-nojs] & {
     display: none;
@@ -34,6 +35,15 @@
       display: none;
     }
   }
+}
+
+.page-header__btn:hover,
+.page-header__btn:focus {
+  fill: $color-accent;
+}
+
+.page-header__btn:active {
+  fill: $color-accent-dark;
 }
 
 .header--extended .page-header__open-menu {
@@ -164,6 +174,7 @@
   color: $color-theme;
   text-align: center;
   text-decoration: none;
+  outline: none;
 
   @media (min-width: $laptop-width) {
     & {
@@ -172,6 +183,16 @@
       padding: 12px 0;
     }
   }
+}
+
+.header__link:hover,
+.header__link:focus {
+  text-decoration: underline;
+  color: $color-accent;
+}
+
+.header__link:active {
+  color: $color-accent-dark;
 }
 
 .header__dropdown-menu {
@@ -186,8 +207,7 @@
   @media (min-width: $desktop-width) {
     & {
       position: absolute;
-      top: -2px;
-      right: -127px;
+      right: -113px;
     }
   }
 }
