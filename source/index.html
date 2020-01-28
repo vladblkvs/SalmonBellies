@@ -21,112 +21,181 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
-    <p class="header__slogan">Trout is the new salmon</p>
-    <a class="header__logo">
-      <picture>
-        <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="113" alt="SalmonBellies">
-      </picture>
-    </a>
-    <button class="page-header__btn" type="button">
-      <span class="page-header__open-menu">
-        <svg width="22" height="22">
-          <title>Open menu</title>
-          <use xlink:href="#icon-menu"></use>
-        </svg>
-      </span>
-      <span class="page-header__close-menu">
-        <svg width="22" height="22">
-          <title>Close menu</title>
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </span>
-    </button>
-    <nav class="header__nav">
-      <div class="header__nav-inner">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#">Our products</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Receipes</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Services</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">The promise</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Origin</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Markets</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">CSR</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Company</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Contacts</a>
-          </li>
-        </ul>
-        <div class="header__dropdown-menu dropdown-menu">
-          <div class="dropdown-menu__activator" tabindex="0">
-            <p class="visually-hidden">Choose locale:</p>
-            <span class="dropdown-menu__arrow" aria-hidden="true">
-              <svg width="12" height="7">
-                <use xlink:href="#icon-arrow"></use>
-              </svg>
-            </span>
-            <span class="dropdown-menu__current-item" aria-hidden="true">
-              <svg width="32" height="32">
-                <use xlink:href="#icon-lang-eng"></use>
-              </svg>
-            </span>
-          </div>
-          <ul class="dropdown-menu__list">
-            <li class="dropdown-menu__item dropdown-menu__item--active">
-              <a class="dropdown-menu__link" href="#">
-                <svg width="32" height="32">
-                  <title>English</title>
-                  <use xlink:href="#icon-lang-eng"></use>
-                </svg>
-              </a>
+  <div class="page-wrapper">
+    <header class="header">
+      <p class="header__slogan">Trout is the new salmon</p>
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="113" alt="SalmonBellies">
+        </picture>
+      </a>
+      <button class="page-header__btn" type="button">
+        <span class="page-header__open-menu">
+          <svg width="22" height="22">
+            <title>Open menu</title>
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </span>
+        <span class="page-header__close-menu">
+          <svg width="22" height="22">
+            <title>Close menu</title>
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </span>
+      </button>
+      <nav class="header__nav">
+        <div class="header__nav-inner">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Our products</a>
             </li>
-            <li class="dropdown-menu__item">
-              <a class="dropdown-menu__link" href="#">
-                <span class="visually-hidden">中文</span>
-                <svg width="32" height="32">
-                  <title>中文</title>
-                  <use xlink:href="#icon-lang-chi"></use>
-                </svg>
-              </a>
+            <li class="header__item">
+              <a class="header__link" href="#">Receipes</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Services</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">The promise</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Origin</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Markets</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">CSR</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Company</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Contacts</a>
             </li>
           </ul>
+          <div class="header__dropdown-menu dropdown-menu">
+            <div class="dropdown-menu__activator" tabindex="0">
+              <p class="visually-hidden">Choose locale:</p>
+              <span class="dropdown-menu__arrow" aria-hidden="true">
+                <svg width="12" height="7">
+                  <use xlink:href="#icon-arrow"></use>
+                </svg>
+              </span>
+              <span class="dropdown-menu__current-item" aria-hidden="true">
+                <svg width="32" height="32">
+                  <use xlink:href="#icon-lang-eng"></use>
+                </svg>
+              </span>
+            </div>
+            <ul class="dropdown-menu__list">
+              <li class="dropdown-menu__item dropdown-menu__item--active">
+                <a class="dropdown-menu__link" href="#">
+                  <svg width="32" height="32">
+                    <title>English</title>
+                    <use xlink:href="#icon-lang-eng"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link" href="#">
+                  <span class="visually-hidden">中文</span>
+                  <svg width="32" height="32">
+                    <title>中文</title>
+                    <use xlink:href="#icon-lang-chi"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+    <h1 class="visually-hidden">SalmonBellies</h1>
+    <div class="cover">
+      <p class="cover__text">
+        Salmonbellies and Lyxfish commit to sell at NO higher prices&ensp;<br>then quoted from our partner Kalaneuvos
+      </p>
+    </div>
+    <div class="main-products">
+      <div class="main-products__announce">
+        <h2 class="main-products__title">Main fish products</h2>
+        <p class="main-products__text">
+          The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias&ensp;<br>and with optimal combination of fish feed during the farming syclus
+        </p>
       </div>
-    </nav>
-  </header>
-  <h1 class="visually-hidden">SalmonBellies</h1>
-  <div class="cover">
-    <p class="cover__text">
-      Salmonbellies and Lyxfish commit to sell at NO higher prices&ensp;<br>then quoted from our partner Kalaneuvos
-    </p>
+      <ul class="main-products__list">
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-1.jpg" width="246" height="154" alt="Kirjolohi-kokonainen">
+            </span>
+            <span class="main-products__card-title">Trout whole<br>oncorhynchus mykiss</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-2.jpg" width="241" height="151" alt="Kirjolohifilee">
+            </span>
+            <span class="main-products__card-title">Trout fillet<br>oncorhynchus mykiss</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-3.jpg" width="248" height="155" alt="Lohi-kokonainen">
+            </span>
+            <span class="main-products__card-title">Salmon whole<br>salmo salar</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-4.jpg" width="243" height="151" alt="Norjalainen-lohifilee">
+            </span>
+            <span class="main-products__card-title">Salmon c-cut fillet<br>salmo salar</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-5.jpg" width="248" height="155" alt="Siika-kasvatettu-villi">
+            </span>
+            <span class="main-products__card-title">Whitefish<br>coregonus lavaretus</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-6.jpg" width="239" height="150" alt="Siikafilee-suomulla-suomustettu-ruodoton">
+            </span>
+            <span class="main-products__card-title">Whitefish fillet without<br>skin and scaled</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-7.jpg" width="234" height="146" alt="Taimen">
+            </span>
+            <span class="main-products__card-title">Farmed brown trout<br>salmo trutta</span>
+          </a>
+        </li>
+        <li class="main-products__item">
+          <a class="main-products__link" href="#">
+            <span class="main-products__image-wrapper">
+              <img class="main-products__img" src="img/main-product-8.jpg" width="246" height="153" alt="Kalaneuvos-tuore-taimenfilee-syvatty-web">
+            </span>
+            <span class="main-products__card-title">Farmed brown trout fillet<br>salmo trutta</span>
+          </a>
+        </li>
+      </ul>
+      <a class="main-products__view-all button" href="#">View all products</a>
+    </div>
+    <footer class="footer">
+    </footer>
   </div>
-  <div class="main-products">
-    <h2 class="main-products__title">Main fish products</h2>
-    <p class="main-products__text">
-      The fish is of premium quality due to aquaculture and harvest in accordance to ASC certified criterias and with optimal combination of fish feed during the farming syclus
-    </p>
-    <div class="main-products__cards"></div>
-    <a class="main-products__link button"></a>
-  </div>
-  <footer class="footer">
-  </footer>
   <script src="js/script.min.js"></script>
 </body>
 </html>

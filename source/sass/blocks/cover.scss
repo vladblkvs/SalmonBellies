@@ -5,20 +5,19 @@
   align-items: flex-end;
   margin: -56px 0 0;
   min-height: 400px;
-  background: url("../img/norway-mobile.jpg") no-repeat 50% 50%;
-  background-color: #bae0f4;
+  background: #bae0f4 url("../img/norway-mobile.jpg") no-repeat 50% 50%;
 
   @media (min-width: $tablet-width) {
     & {
       min-height: 600px;
-      background: url("../img/norway-tablet.jpg") no-repeat 50% 50%;
+      background: #bae0f4 url("../img/norway-tablet.jpg") no-repeat 50% 50%;
     }
   }
 
   @media (min-width: $laptop-width) {
     & {
       margin: -261px 0 0;
-      background: url("../img/norway-laptop-desktop.jpg") no-repeat 50% 50%;
+      background: #bae0f4 url("../img/norway-laptop-desktop.jpg") no-repeat 50% 50%;
     }
   }
 
