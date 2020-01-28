@@ -4,6 +4,12 @@
   flex-wrap: wrap;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    & {
+      justify-content: center;
+    }
+  }
+
   @media (min-width: $laptop-width) {
     & {
       flex-direction: column-reverse;
