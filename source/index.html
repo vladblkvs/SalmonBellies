@@ -24,23 +24,22 @@
   </div>
   <div class="page-wrapper">
     <header class="header">
-      <p class="header__slogan">Trout is the new salmon</p>
       <a class="header__logo">
         <picture>
-          <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="230" height="113" alt="SalmonBellies">
+          <source media="(min-width: 1024px)" srcset="img/logo-big.svg">
+          <img class="page-header__logo-image" src="img/logo-small.svg" width="192" height="30" alt="SalmonBellies">
         </picture>
       </a>
       <button class="page-header__btn" type="button">
         <span class="page-header__open-menu">
-          <svg width="22" height="22">
-            <title>Open menu</title>
+          <span class="visually-hidden">Open menu</span>
+          <svg width="22" height="22" aria-hidden="true">
             <use xlink:href="#icon-menu"></use>
           </svg>
         </span>
         <span class="page-header__close-menu">
-          <svg width="22" height="22">
-            <title>Close menu</title>
+          <span class="visually-hidden">Close menu</span>
+          <svg width="22" height="22" aria-hidden="true">
             <use xlink:href="#icon-close"></use>
           </svg>
         </span>
@@ -79,13 +78,13 @@
           <div class="header__dropdown-menu dropdown-menu">
             <div class="dropdown-menu__activator" tabindex="0">
               <p class="visually-hidden">Choose locale:</p>
-              <span class="dropdown-menu__arrow" aria-hidden="true">
-                <svg width="12" height="7">
+              <span class="dropdown-menu__arrow">
+                <svg width="12" height="7" aria-hidden="true">
                   <use xlink:href="#icon-arrow"></use>
                 </svg>
               </span>
-              <span class="dropdown-menu__current-item" aria-hidden="true">
-                <svg width="32" height="32">
+              <span class="dropdown-menu__current-item">
+                <svg width="32" height="32" aria-hidden="true">
                   <use xlink:href="#icon-lang-eng"></use>
                 </svg>
               </span>
@@ -93,8 +92,8 @@
             <ul class="dropdown-menu__list">
               <li class="dropdown-menu__item dropdown-menu__item--active">
                 <a class="dropdown-menu__link" href="#">
-                  <svg width="32" height="32">
-                    <title>English</title>
+                  <span class="visually-hidden">English</span>
+                  <svg width="32" height="32" aria-hidden="true">
                     <use xlink:href="#icon-lang-eng"></use>
                   </svg>
                 </a>
@@ -102,8 +101,7 @@
               <li class="dropdown-menu__item">
                 <a class="dropdown-menu__link" href="#">
                   <span class="visually-hidden">中文</span>
-                  <svg width="32" height="32">
-                    <title>中文</title>
+                  <svg width="32" height="32" aria-hidden="true">
                     <use xlink:href="#icon-lang-chi"></use>
                   </svg>
                 </a>
@@ -195,6 +193,36 @@
       <a class="main-products__view-all button" href="#">View all products</a>
     </div>
     <footer class="footer">
+      <div class="footer__inner">
+        <a class="footer__logo">
+          <img src="img/logo-small.svg" width="256" height="40" alt="SalmonBellies">
+        </a>
+        <span class="footer__kosher-logo">
+          <span class="visually-hidden">Kosher per demand</span>
+          <svg width="204" height="58" aria-hidden="true">
+            <use xlink:href="#kosher-logo"></use>
+          </svg>
+        </span>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Facebook</span>
+              <svg width="41" height="41" aria-hidden="true">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">
+              <span class="visually-hidden">Linkedin</span>
+              <svg width="41" height="41" aria-hidden="true">
+                <use xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__copy">Copyright SalmonBellies.no 2019,&ensp;<br>All Rights Reserved</p>
+      </div>
     </footer>
   </div>
   <script src="js/script.min.js"></script>

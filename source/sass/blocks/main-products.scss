@@ -1,18 +1,16 @@
 .main-products {
-  padding: 30px 22px 22px;
+  padding: 30px 22px 32px;
   text-align: center;
   background: #eef9ff url("../img/ice_bg-mobile.jpg") no-repeat 50% bottom fixed;
 
   @media (min-width: $tablet-width) {
     & {
-      min-height: 600px;
       background: #eef9ff url("../img/ice_bg-tablet.jpg") no-repeat 50% bottom fixed;
     }
   }
 
   @media (min-width: $laptop-width) {
     & {
-      min-height: 800px;
       padding: 50px 22px 32px;
       background: #eef9ff url("../img/ice_bg-laptop-desktop.jpg") no-repeat 50% bottom;
     }
@@ -20,7 +18,6 @@
 
   @media (min-width: $desktop-width) {
     & {
-      min-height: 800px;
       background: #eef9ff url("../img/ice_bg-laptop-desktop.jpg") no-repeat 50% 50%;
     }
   }
