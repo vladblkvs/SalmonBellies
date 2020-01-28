@@ -87,12 +87,13 @@
 
 .header--extended .header__nav {
   position: absolute;
+  z-index: 1;
   display: block;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 56px;
-  background-color: rgba(247, 247, 247, 0.5);
+  background-color: rgba(247, 247, 247, 0.9);
   animation: bounce 0.4s;
 
   @media (min-width: $laptop-width) {

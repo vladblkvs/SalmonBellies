@@ -46,9 +46,16 @@
 .dropdown-menu__arrow {
   position: absolute;
   top: -4px;
-  right: -26px;
-  padding: 13px 10px 12px;
+  right: -14px;
+  padding: 13px 0 12px;
   fill: $color-theme;
+
+  @media (min-width: $desktop-width) {
+    & {
+      right: -26px;
+      padding: 13px 10px 12px;
+    }
+  }
 }
 
 .dropdown-menu__activator:hover .dropdown-menu__arrow,
