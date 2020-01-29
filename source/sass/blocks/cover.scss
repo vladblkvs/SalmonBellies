@@ -17,11 +17,19 @@
       margin: -268px 0 0;
       background: #bae0f4 url("../img/norway-laptop-desktop.jpg") no-repeat 50% 50%;
     }
+
+    body[data-nojs] & {
+      margin: -294px 0 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     & {
       margin: -312px 0 0;
+    }
+
+    body[data-nojs] & {
+      margin: -338px 0 0;
     }
   }
 }

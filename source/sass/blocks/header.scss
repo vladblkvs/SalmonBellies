@@ -138,11 +138,29 @@ body[data-nojs] .header__nav {
   color: $color-theme;
   padding: 13px 28px 13px 44px;
 
+  @media (min-width: $tablet-width) {
+    & {
+      padding: 13px;
+      transform: scale(1.5) translateY(75px);
+    }
+  }
+
   @media (min-width: $laptop-width) {
     & {
       padding: 0;
+      transform: none;
     }
   }
+}
+
+.header--extended .header__logo {
+  transform: none;
+  transition: 0.2s;
+}
+
+body[data-nojs] .header__logo {
+  padding: 13px;
+  transform: none;
 }
 
 .page-header__logo-image {
