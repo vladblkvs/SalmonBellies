@@ -6,14 +6,33 @@
   list-style: none;
 
   @media (min-width: $laptop-width) {
-    & {
-      align-items: center;
-    }
+    align-items: center;
+    max-width: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 260px;
   }
 }
 
 .social__item {
   margin-left: 24px;
+}
+
+.social__item:nth-child(n+4) {
+  @media (min-width: $laptop-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.social__item:nth-child(n+5) {
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+  }
 }
 
 .social__link {

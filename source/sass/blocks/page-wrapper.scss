@@ -1,4 +1,8 @@
 .page-wrapper {
+  @media (min-width: $laptop-width) {
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 1600px;
     margin: 0 auto;
